@@ -5,20 +5,20 @@ import os
 import datetime
 
 
-database_list = ['hzzf_dsp_huz', 'hzzf_dsp_jx', 'hzzf_dsp_qz', 'hzzf_dsp_st', 'hzzf_dsp_sx', 'hzzf_dsp_tz']
+database_list = ['xxx']
 date = datetime.date.today()
 DATE = '{}-{}-{}'.format(date.year, date.month, date.day)
-out_file_dir = 'H:/code/新增二手房清洗/' + DATE + '/原始数据/'
-final_file_dir = 'H:/code/新增二手房清洗/' + DATE + '/清洗结果/'
+out_file_dir = 'H:/code/xx/' + DATE + '/原始数据/'
+final_file_dir = 'H:/code/xx/' + DATE + '/清洗结果/'
 DIRS = [out_file_dir, final_file_dir]
 
 
 # 连接数据库
 def connect_sql(db_name):
-    db = pymysql.connect(host='47.114.98.123',
+    db = pymysql.connect(host='xxxx',
                          port=3306,
-                         user='yangyang',
-                         password='Yangyang@123',
+                         user='yy',
+                         password='xx',
                          database=db_name,
                          charset='utf8')
     return db
